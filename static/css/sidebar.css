@@ -1,0 +1,95 @@
+#sidebar {
+    position: fixed;
+    top: 8px;
+    right: 0px;
+    width: 250px;
+    background-color: #F5F5F5;
+    border-left: 2px solid #ccc;
+    border-right: 2px solid #ccc;
+    border-top: 1px solid #ccc;
+    border-bottom: 2px solid #ccc;
+    border-color: darkgray;
+    /*transition: right 0.3s;*/
+    z-index: 1;
+    overflow-y: auto;
+    height: calc(100% - 32px); /* Вычисляйте высоту относительно родительского элемента */
+}
+
+#content {
+    margin-right: 250px;
+}
+/*!* Стиль кнопки *!*/
+/*#toggle-sidebar-button {*/
+/*    position: fixed;*/
+/*    top: 20px;*/
+/*    right: 100px;*/
+/*    z-index: 2;*/
+/*}*/
+
+/* Удалим стили по умолчанию для маркера в списке */
+ul.tabs {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Стилизуем вкладки */
+.tab {
+    display: inline-block;
+    background-color: #eee;
+    color: #333;
+    padding: 8px 35px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    cursor: pointer;
+}
+
+/* Стиль активной вкладки */
+.tab.active {
+    background-color: #fff;
+    border-bottom: 2px solid #0078d4; /* Цвет активной вкладки */
+    color: #0078d4; /* Цвет текста активной вкладки */
+}
+
+/* Стилизуем контейнер для вкладок */
+.tabs-container {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+/* Стилизуем содержимое вкладок */
+.tab-content {
+    padding: 50px;
+    border: 0px solid #ccc;
+    border-radius: 0 0 5px 5px;
+}
+
+
+.my-button {
+    /* Настройте положение кнопки здесь */
+    position: absolute; /* Устанавливает абсолютное позиционирование */
+    top: 60px; /* Расстояние сверху в пикселях */
+    left: 60px; /* Расстояние слева в пикселях */
+    margin: 15px; /* Пример - задает отступ вокруг кнопки */
+    padding: 8px 15px; /* Пример - задает внутренний отступ */
+    border-radius: 5px; /* Задает скругленные углы кнопки */
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2); /* Добавляет тень кнопке */
+    box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.3); /* Добавляет внутненнюю тень кнопке */
+    background-color: #C2C2C2; /* Пример - цвет фона кнопки */
+    color: white; /* Пример - цвет текста кнопки */
+    border: none; /* Пример - убирает границу */
+    cursor: pointer; /* Пример - меняет курсор при наведении */
+}
+
+.my-button:hover {
+    background-color: #A6A6A6; /* Пример - изменяет цвет фона при наведении */
+}
+
+.my-button:active {
+    background-color: #747272; /* Изменяет цвет фона при нажатии */
+    transform: translateY(1px); /* Смещение кнопки при нажатии */
+}
+
+

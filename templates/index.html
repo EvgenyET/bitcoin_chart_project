@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Ваши другие теги head -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/chart.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/sidebar.css' %}">
+    <script type="module" src="{% static 'js/chart.js' %}"></script>
+{#    <script type="module" src="{% static 'js/sidebar.js' %}"></script>#}
+{#    <script type="module" src="{% static 'js/test.js' %}"></script>#}
+</head>
+<body>
+{#    <button id="toggle-sidebar-button">EMA 120</button>#}
+{#    <div class="container">#}
+{#        <div id="content">#}
+            <!-- Элемент для графика -->
+            <canvas id="bitcoin-chart" width="1900" height="898"></canvas>
+{#            <canvas id="ema-chart" width="800" height="400"></canvas>#}
+{#            <canvas id="second-canvas" class="canvas" width="400" height="100" style="border: 2px solid black;"></canvas>#}
+{#        </div>#}
+{#    </div>#}
+    <!-- Боковая панель -->
+    <div id="sidebar" class="hidden">
+        <div class="sidebar">
+            <div class="tabs">
+                <div class="tab active" data-tab="tab1">Функции</div>
+                <div class="tab" data-tab="tab2">Тесты</div>
+            </div>
+            <div class="tab-content" id="tab1"></div>
+            <div class="tab-content hidden" id="tab2"></div>
+        </div>
+{#        <button id="zoom-out-button">Zoom Out</button>#}
+        <!-- Здесь JavaScript создаст кнопки таймфрейма и кнопку индикатора -->
+    </div>
+</body>
+</html>
+
+
+
